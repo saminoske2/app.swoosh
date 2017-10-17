@@ -93,19 +93,15 @@
                             <constraint firstItem="qS4-nK-Pn0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xGJ-eq-6Hb"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgImage" destination="zmj-fX-DK0" id="k35-CF-AST"/>
-                        <outlet property="swooshLogo" destination="qS4-nK-Pn0" id="oFZ-nE-dTj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-38" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--League View Controller-->
         <scene sceneID="SWr-Et-jbl">
             <objects>
-                <viewController id="viI-cx-fNV" sceneMemberID="viewController">
+                <viewController id="viI-cx-fNV" customClass="LeagueViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T9Z-Wx-cJZ"/>
                         <viewControllerLayoutGuide type="bottom" id="gOT-fd-hbB"/>
@@ -184,6 +180,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="viI-cx-fNV" eventType="touchUpInside" id="Rmb-yX-gKw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoD-M6-X8e">
                                 <rect key="frame" x="16" y="40" width="29" height="24"/>
@@ -216,16 +215,19 @@
                             <constraint firstItem="gOT-fd-hbB" firstAttribute="top" secondItem="zJP-Dr-AVo" secondAttribute="bottom" id="wvr-KR-pbv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="tRF-Ua-RWK" kind="show" identifier="SkillVCSegue" id="sf1-Sc-cYv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VD2-pH-QOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Kdg-2O-Dgh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="796" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Skill View Controller-->
         <scene sceneID="wQr-S3-Nn7">
             <objects>
-                <viewController id="tRF-Ua-RWK" sceneMemberID="viewController">
+                <viewController id="tRF-Ua-RWK" customClass="SkillViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HmV-5o-aUq"/>
                         <viewControllerLayoutGuide type="bottom" id="OlQ-3c-fSu"/>

@@ -10,12 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var bgImage: UIImageView!
-    
-    @IBOutlet weak var swooshLogo: UIImageView!
-    
-    
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
         // if ever needed..this would be the coding for laying out autoLayout coding for specific pixel perfectness...
